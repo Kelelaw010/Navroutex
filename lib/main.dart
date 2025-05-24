@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: router,
       title: 'Flutter GoRouter Example',
+      debugShowCheckedModeBanner: false, //hilangin tulisan debug banner
     );
   }
 }

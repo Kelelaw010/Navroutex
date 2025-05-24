@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          //Go_router
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -22,12 +23,13 @@ class HomeScreen extends StatelessWidget {
               child: Text('Go to Profile (Router)'),
             ),
           ),
+          //navigator push
           SizedBox(height: 20),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.push(
-                  //pakai navigator biasa
+                  //pakai navigator biasa (push)
                   context,
                   MaterialPageRoute(builder: (context) => DetailScreen()),
                 );
